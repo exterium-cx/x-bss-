@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blender Calculator</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/icon.jpg" type="image/x-icon">
+</head>
+<body>
+
+<header class="topnav">
+  <div class="nav-inner">
+    <span class="brand">🐝 Bee Swarm Calculator</span>
+    <nav>
+   <nav>
+<nav>
+  <a href="/html/blender.html" class="active">Blender</a>
+  <a href="/html/bond.html">Bond</a>
+  <a href="/html/hive.html">Hive Builder</a>
+  <a href="/html/gear.html">Gear</a>
+  <a href="/html/inventory.html">Inventory</a>
+</nav>
+
+
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="card">
+    <h1>Blender Calculator</h1>
+
+    <label>Item</label>
+    <select id="item"></select>
+
+    <label>Quantity</label>
+    <input id="quantity" type="number" min="1" value="1">
+
+    <label class="checkbox">
+      <input type="checkbox" id="includeRJ">
+      Include Royal Jelly cost
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox" id="showTotals" checked>
+      Show Base Totals
+    </label>
+
+    <button class="calculate" onclick="calculate()">Calculate</button>
+
+    <div id="output"></div>
+
+    <div class="treeControls">
+      <button onclick="expandAll()">Expand All</button>
+      <button onclick="collapseAll()">Collapse All</button>
+    </div>
+  </div>
+
+  <div class="totals hidden" id="totalsPanel">
+    <h2>Base Totals</h2>
+    <div id="totalsOutput"></div>
+  </div>
+</div>
+
+<script src="/js/recipes.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

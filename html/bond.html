@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bond Calculator</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/icon.jpg" type="image/x-icon">
+</head>
+<body>
+
+<header class="topnav">
+  <div class="nav-inner">
+    <span class="brand">🐝 Bee Swarm Calculator</span>
+<nav>
+  <a href="/html/blender.html">Blender</a>
+  <a href="/html/bond.html" class="active">Bond</a>
+  <a href="/html/hive.html">Hive Builder</a>
+  <a href="/html/gear.html">Gear</a>
+  <a href="/html/inventory.html">Inventory</a>
+</nav>
+
+  </div>
+</header>
+
+<div class="bondPage">
+  <div class="bondCard">
+    <h1>Bond Calculator</h1>
+
+    <div class="bondControls">
+      <label class="bondBonusLabel" for="bondBonus">
+        Bond Bonus % (max 30%)
+      </label>
+      <input
+        type="number"
+        id="bondBonus"
+        class="bondBonusInput"
+        min="0"
+        max="30"
+        value="0"
+      >
+    </div>
+
+    <div class="bondGrid" id="bondGrid"></div>
+
+    <div class="bondTotal">
+      Total Honey Required:
+      <span id="bondTotal">0</span>
+    </div>
+  </div>
+</div>
+
+<script src="/js/bond.js"></script>
+</body>
+</html>
